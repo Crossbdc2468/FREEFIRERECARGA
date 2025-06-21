@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Oficial de Recargas - Garena</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="IMG/garena-logo.png" alt="Garena" class="logo">
+                    <span class="header-title">Centro Oficial de Recargas</span>
+                </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Hero Banner -->
+<section class="hero-banner">
+    <div class="container">
+        <div class="banner-slider">
+            <div class="banner-nav prev">‹</div>
+            <div class="banner-content">
+                <div class="banner-text">
+                    <div class="lightning-bolt">⚡</div>
+                    <h2>¡CONOCE LAS <span class="highlight">MEMBRESÍAS FREE FIRE!</span></h2>
+                    <div class="membership-cards">
+                        <!-- Primera membresía -->
+                        <div class="membership-card">
+                            <!-- Logo en lugar del icono en cuadro -->
+                            <img src="IMG/logo-de-diamante-4-png.png.webp" alt="Logo Membresía 1" class="membership-logo">
+                            <!-- Información -->
+                            <div class="card-info">
+                                <div class="diamonds">19 DIAMANTES</div>
+                                <div class="benefits">AL INSTANTE Y BENEFICIOS DIARIOS POR 7 DÍAS</div>
+                            </div>
+                        </div>
+                        <!-- Segunda membresía -->
+                        <div class="membership-card featured">
+                            <!-- Logo -->
+                            <img src="IMG/logo-de-heroico-png.png.webp" alt="Logo Membresía 2" class="membership-logo">
+                            <div class="card-info">
+                                <div class="diamonds">INCREÍBLES RECOMPENSAS</div>
+                                <div class="benefits">INSTANTÁNEAS Y DIARIAS POR 7 DÍAS</div>
+                            </div>
+                        </div>
+                        <!-- Tercera membresía -->
+                        <div class="membership-card">
+                            <!-- Logo -->
+                            <img src="IMG/logo-de-gran-maestro-png.png.webp" alt="Logo Membresía 3" class="membership-logo">
+                            <div class="card-info">
+                                <div class="diamonds">390 DIAMANTES</div>
+                                <div class="benefits">AL INSTANTE Y BENEFICIOS DIARIOS POR 30 DÍAS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-nav next">›</div>
+        </div>
+    </div>
+</section>
+
+    <!-- Game Selection -->
+    <section class="game-selection">
+        <div class="container">
+            <h3>Selección de Juego</h3>
+            <div class="game-grid">
+                <div class="game-item active">
+                    <img src="IMG/LOGO FREE.webp" alt="Free Fire">
+                    <span>Free Fire</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Game Section -->
+    <section class="main-game">
+        <div class="container">
+            <div class="game-banner">
+                <div class="game-info">
+                    <img src="IMG/LOGO FREE.webp" alt="Free Fire" class="game-logo">
+                    <div class="game-details">
+                        <h2>Free Fire</h2>
+                        <div class="security-badge">
+                            <span class="security-icon">🔒</span>
+                            Pago 100% seguro
+                        </div>
+                    </div>
+                </div>
+                <div class="game-characters">
+                    <img src="IMG/FREE FIRE FONDO.webp" alt="Free Fire Characters">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Form -->
+    <section class="purchase-form">
+        <div class="container">
+            <div class="form-container">
+                <!-- Step 1: Player ID -->
+                <div class="form-step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <h3>ID de Jugador</h3>
+                    </div>
+                    <div class="step-content">
+                        <div class="input-group">
+                            <label for="player-id">ID de Jugador <span class="info-icon">ⓘ</span></label>
+                            <input type="text" id="player-id" placeholder="Introduce el ID del jugador aquí" required>
+                            <div class="input-help">Encuentra tu ID en la configuración del juego</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Select Currency Type -->
+                <div class="form-step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h3>Tipo de Moneda</h3>
+                    </div>
+                    <div class="step-content">
+                        <div class="currency-selector">
+                            <div class="currency-option active" data-currency="diamonds">
+                                <div class="currency-icon">💎</div>
+                                <span>Diamantes</span>
+                                <div class="currency-desc">Moneda premium del juego</div>
+                            </div>
+                      
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Select Amount -->
+                <div class="form-step">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <h3>Cantidad</h3>
+                    </div>
+                    <div class="step-content">
+                        <div class="amount-grid" id="diamonds-amounts">
+                            <div class="amount-item" data-amount="100" data-price="2.99">
+                                <div class="currency-display">💎</div>
+                                <div class="amount-number">100</div>
+                                <div class="amount-price">$0.50</div>
+                                <div class="amount-bonus">Oferta básica</div>
+                            </div>
+                            <div class="amount-item popular" data-amount="310" data-price="8.99">
+                                <div class="popular-badge">Más Popular</div>
+                                <div class="currency-display">💎</div>
+                                <div class="amount-number">310</div>
+                                <div class="amount-price">$1.50</div>
+                                <div class="amount-bonus">+10% Bonus</div>
+                            </div>
+                            <div class="amount-item" data-amount="520" data-price="14.99">
+                                <div class="currency-display">💎</div>
+                                <div class="amount-number">520</div>
+                                <div class="amount-price">$2.50</div>
+                                <div class="amount-bonus">+15% Bonus</div>
+                            </div>
+                            <div class="amount-item" data-amount="1060" data-price="29.99">
+                                <div class="currency-display">💎</div>
+                                <div class="amount-number">1.060</div>
+                                <div class="amount-price">$5.00</div>
+                                <div class="amount-bonus">+20% Bonus</div>
+                            </div>
+                            <div class="amount-item best-value" data-amount="2180" data-price="59.99">
+                                <div class="value-badge">Mejor Valor</div>
+                                <div class="currency-display">💎</div>
+                                <div class="amount-number">2.180</div>
+                                <div class="amount-price">$10.00</div>
+                                <div class="amount-bonus">+25% Bonus</div>
+                            </div>
+                            <div class="amount-item" data-amount="5600" data-price="149.99">
+                                <div class="currency-display">💎</div>
+                                <div class="amount-number">5.600</div>
+                                <div class="amount-price">$25.</div>
+                                <div class="amount-bonus">+30% Bonus</div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Personal Information -->
+                <div class="form-step">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <h3>Información Personal</h3>
+                    </div>
+                    <div class="step-content">
+                        <div class="personal-info-grid">
+                            <div class="input-group">
+                                <label for="full-name">Nombre Completo *</label>
+                                <input type="text" id="full-name" placeholder="Ingresa tu nombre completo" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="dni">DNI / Documento *</label>
+                                <input type="text" id="dni" placeholder="Número de documento" required>
+                            </div>
+                            <div class="input-group">
+    <label for="country">País *</label>
+    <select id="country" required>
+        <option value="">Selecciona tu país</option>
+        <option value="AR">Argentina</option>
+        <option value="BR">Brasil</option>
+        <option value="CL">Chile</option>
+        <option value="CO">Colombia</option>
+        <option value="MX">México</option>
+        <option value="PE">Perú</option>
+        <option value="UY">Uruguay</option>
+        <!-- Países adicionales donde también está disponible -->
+        <option value="BO">Bolivia</option>
+        <option value="PY">Paraguay</option>
+        <option value="VE">Venezuela</option>
+        <option value="EC">Ecuador</option>
+        <option value="DO">República Dominicana</option>
+        <option value="CR">Costa Rica</option>
+        <option value="SV">El Salvador</option>
+        <option value="GT">Guatemala</option>
+        <option value="HN">Honduras</option>
+        <option value="NI">Nicaragua</option>
+        <option value="PA">Panamá</option>
+    </select>
+</div>
+                            <div class="input-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5: Payment Information -->
+                <div class="form-step">
+                    <div class="step-header">
+                        <div class="step-number">5</div>
+                        <h3>Información de Pago</h3>
+                    <div class="step-content">
+    <div class="payment-form">
+        <div class="card-type-selector">
+            <div class="card-type active" data-type="credit">
+                <!-- Reemplaza 'ruta/a/tu/icono.png' por la URL de tu imagen -->
+                <div class="card-icon">
+                    <img src="IMG/klipartz.com.png"Icono Tarjeta de Crédito" style="width: 24px; height: 24px;">
+                </div>
+                <span>Tarjeta de Crédito</span>
+            </div>
+            <div class="card-type" data-type="debit">
+                <!-- Reemplaza 'ruta/a/tu/icono.png' por la URL de tu imagen -->
+                <div class="card-icon">
+                    <img src="IMG/klipartz.com.png" alt="Icono Tarjeta de Débito" style="width: 24px; height: 24px;">
+                </div>
+                <span>Tarjeta de Débito</span>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                            
+                            <div class="payment-grid">
+                                <div class="input-group full-width">
+                                    <label for="card-number">Número de Tarjeta *</label>
+                                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="card-name">Nombre en la Tarjeta *</label>
+                                    <input type="text" id="card-name" placeholder="Como aparece en la tarjeta" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="expiry">Fecha de Vencimiento *</label>
+                                    <input type="text" id="expiry" placeholder="MM/AA" maxlength="5" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="cvv">CVV *</label>
+                                    <input type="text" id="cvv" placeholder="123" maxlength="4" required>
+                                </div>
+                            </div>
+
+                            <div class="security-info">
+                                <div class="security-icon">🔒</div>
+                                <div class="security-text">
+                                    <strong>Pago 100% Seguro</strong>
+                                    <p>Tu información está protegida con encriptación SSL de 256 bits</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Purchase Summary -->
+            <div class="purchase-summary">
+                <div class="summary-header">
+                    <h3>Resumen de Compra</h3>
+                    <div class="summary-icon">📋</div>
+                </div>
+                <div class="summary-content">
+                    <div class="summary-item">
+                        <span class="summary-label">ID de Jugador:</span>
+                        <span class="summary-value" id="summary-player-id">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Producto:</span>
+                        <span class="summary-value" id="summary-product">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Cantidad:</span>
+                        <span class="summary-value" id="summary-amount">-</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-item total">
+                        <span class="summary-label">Total a Pagar:</span>
+                        <span class="summary-value" id="summary-total">$0.00</span>
+                    </div>
+                </div>
+                <button class="purchase-btn" id="complete-purchase">
+                    <span class="btn-icon">🔒</span>
+                    <span class="btn-text">Completar Compra Segura</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="copyright">© 2025 Garena Online. Todos los derechos reservados.</div>
+                    <div class="footer-description">Centro oficial de recargas para Free Fire</div>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Soporte</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
